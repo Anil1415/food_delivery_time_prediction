@@ -31,7 +31,7 @@ class DataIngestion:
         logging.info('Data Ingestion starts')
 
         try:
-            df = pd.read_csv(os.path.join('notebooks/data','food_delivery_dataset.csv'))
+            df = pd.read_csv(os.path.join('notebooks/data','cleaned_food_delivery_dataset.csv'))
             logging.info('Dataset read as pandas DataFrame')
 
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
